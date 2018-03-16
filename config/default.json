@@ -1,0 +1,62 @@
+{
+  "app": {
+    "app_name": "Wesure",
+    "lang": "zh_CN",
+    "theme": "triton",
+    "area": "ui",
+    "debug": true,
+    "login_timeout": 3600,
+    "static_cache_maxage": 0,
+    "max_scan_block_size": 4096,
+    "enable_https": false,
+    "build_mode": "development",
+    "enable_mapapi": false,
+    "polling": false
+  },
+  "db": {
+    "type": "mysql",
+    "host": "172.16.75.90",
+    "port": 23306,
+    "user": "root",
+    "password": "raisecom@123",
+    "database": "db_msp"
+  },
+  "redis": {
+    "host": "172.16.75.90",
+    "port": 61003
+  },
+  "mq": {
+    "mqtt_host": "172.16.75.98",
+    "mqtt_port": 1883,
+    "mqtt_user": "guest",
+    "mqtt_pwd": "guest",
+    "mqtt_websocket_port": 15675,
+    "amqp_host": "172.16.75.98",
+    "amqp_port": 5672
+  },
+  "proxy": {
+    "internal": {
+      "/springboot":"172.16.75.199:8080"
+    },
+    "internal_upload": {
+      "/cc": "192.168.202.109:60001",
+      "/confcenterU": "172.16.75.12:60050"
+    },
+    "south": {
+      "/rabbitmq": "localhost:15672"
+    },
+    "north": {
+      "/pm2.5": "localhost:9615"
+    }
+  },
+  "terminal_websocket_server": {
+    "host": "localhost",
+    "port": "9001"
+  },
+  "processes": {
+    "sysmng": {
+      "host": "172.16.75.90",
+      "port": 60001
+    }
+  }
+}

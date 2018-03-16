@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html manifest="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon" >
+    <title><%= app_name %></title>
+    <script type="text/javascript">
+
+        var APP = {
+            app_name : '<%= app_name %>',
+            version : '<%= version %>',
+            theme : '<%= theme %>',
+            lang : '<%= lang %>',
+            wallpaper: '<%= wallpaper %>',
+            user : '<%= user %>',
+            dict : <%- i18ndict %>,
+        };
+        // APP.headerHeight = APP.theme=='triton' ? 68 : 56;
+        APP.headerHeight = 60;
+        APP.leftMenuWidth = 220;
+
+        // var Ext = Ext || {};
+        // Ext.beforeLoad = function (tags) {
+        //     // var locale = APP.lang=='en_US' ? 'en' : APP.lang,
+        //     //     profile = APP.theme + "-" + locale;
+        //     profile = 'zh_CN';
+        //     Ext.manifest = profile;
+        // };
+
+    </script>
+    <script type="text/javascript" src="javascripts/public.js"></script>
+    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script id="microloader" data-app="ec77a4f3-67c8-4d44-b837-0cc4637a789f" type="text/javascript" src="bootstrap.js"></script>
+
+</head>
+<body></body>
+</html>

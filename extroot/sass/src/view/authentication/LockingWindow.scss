@@ -1,0 +1,14 @@
+.auth-locked-window{
+    .x-window-body {
+        //background-image:url('lock-screen-background.jpg');
+        //写在js中
+        background-size:cover;
+        background-repeat:repeat;
+    }
+
+    &.x-window-default {
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+}
