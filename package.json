@@ -20,7 +20,7 @@
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "excel-export": "^0.5.1",
-    "express": "~4.15.5",
+    "express": "~4.17.3",
     "express-http-proxy": "^1.0.2",
     "express-mysql-session": "^1.2.1",
     "express-session": "~1.15.1",
